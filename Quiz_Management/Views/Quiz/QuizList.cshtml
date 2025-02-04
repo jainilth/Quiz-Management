@@ -1,0 +1,108 @@
+﻿@model DataTable
+@using System.Data
+
+<main id="main" class="main">
+    <div class="container-fluid">
+        <!-- Search Section -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Search</h5>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Enter Quiz Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="date" class="form-control" placeholder="Enter Quiz Date">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-success me-2">Search</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <di class=" m-3">
+                        <a class="btn btn-primary btn-sm px-4 py-2" asp-area="" asp-controller="Quiz" asp-action="QuizAdd">+ Add Quiz </a>
+                    </di>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+
+                    </form>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Quiz Id</th>
+                                <th>Quiz Name</th>
+                                <th>Total Questions</th>
+                                <th>Quiz Date</th>
+                                <th>User Name</th>
+                                <th>Created</th>
+                                <th>Modified</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>General Knowledge Qui</td>
+                                <td>20</td>
+                                <td>2024-01-15</td>
+                                <td>1001</td>
+                                <td>2024-01-28</td>
+                                <td>2024-01-28</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary me-1">Edit</button>
+                                    <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+
+                            @foreach (DataRow row in Model.Rows)
+                            {
+                                <tr>
+                                    <td>@row["QuizID"]</td>
+                                    <td>@row["QuizName"]</td>
+                                    <td>@row["TotalQuestions"]</td>
+                                    <td>@row["QuizDate"]</td>
+                                    <td>@row["UserName"]</td>
+                                    <td>@row["Created"]</td>
+                                    <td>@row["Modified"]</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary me-1">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>Showing 1 to 3 of 3 entries</div>
+                    <nav>
+                        <ul class="pagination mb-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#">Previous</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
