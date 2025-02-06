@@ -1,4 +1,5 @@
-﻿<main id="main" class="main">
+﻿@model Quiz_Management.Models.QuizModel
+<main id="main" class="main">
     <div class="container mt-4">
         <div class="card">
             <div class="card-body">
@@ -13,34 +14,33 @@
 
                 <form>
                     <div class="mb-3">
-                        <label for="quizName" class="form-label">Quiz Name</label>
-                        <input type="text" class="form-control" id="quizName" required>
+                        <label class="form-label">Quiz Name</label>
+                        <input type="text" asp-for="QuizName" class="form-control">
+                        <span asp-validation-for="QuizName" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
-                        <label for="totalQuestions" class="form-label">Total Questions</label>
-                        <input type="number" class="form-control" id="totalQuestions" required>
+                        <label class="form-label">Total Questions</label>
+                        <input type="number" asp-for="TotalQuestions" class="form-control" id="totalQuestions">
+                        <span asp-validation-for="TotalQuestions" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
-                        <label for="quizDate" class="form-label">Quiz Date</label>
-                        <input type="date" class="form-control" id="quizDate" required>
+                        <label class="form-label">Quiz Date</label>
+                        <input type="date" asp-for="QuizDate" class="form-control" id="quizDate">
+                        <span asp-validation-for="QuizDate" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
-                        <label for="userId" class="form-label">User ID</label>
-                        <input type="text" class="form-control" id="userId" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="modified" class="form-label">Modified</label>
-                        <input type="date" class="form-control" id="modified" readonly>
+                        <label class="form-label">User ID</label>
+                        <input type="text" asp-for="UserID" class="form-control" id="userId">
+                        <span asp-validation-for="UserID" class="text text-danger "></span>
                     </div>
 
                     <div class="mt-4">
                         <button type="submit" class="btn btn-success me-2">Save</button>
                         <button type="button" class="btn btn-danger">Reset</button>
-                        <a class="btn btn-warning ms-1" asp-area="" asp-controller="Quiz" asp-action="QuizList">
+                        <a class="btn btn-warning ms-1" asp-controller="Quiz" asp-action="QuizList">
                             Back
                         </a>
                     </div>

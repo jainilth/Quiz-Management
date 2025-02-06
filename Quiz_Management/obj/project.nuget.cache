@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vJmZUIv016Y=",
+  "dgSpecHash": "BEFcgE/+b2s=",
   "success": true,
-  "projectFilePath": "D:\\jainil\\sem-4\\.net\\Quiz_Management\\Quiz_Management.csproj",
+  "projectFilePath": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

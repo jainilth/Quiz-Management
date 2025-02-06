@@ -1,4 +1,5 @@
-﻿<main id="main" class="main">
+﻿@model Quiz_Management.Models.QuestionLevelModel
+<main id="main" class="main">
     <div class="container mt-4">
         <div class="card">
             <div class="card-body">
@@ -13,13 +14,15 @@
 
                 <form>
                     <div class="mb-3">
-                        <label for="questionLevel" class="form-label">Question Level</label>
-                        <input type="text" class="form-control" id="questionLevel" required>
+                        <label class="form-label">Question Level</label>
+                        <input asp-for="QuestionLevel" type="text" class="form-control">
+                        <span asp-validation-for="QuestionLevel" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
-                        <label for="userId" class="form-label">User ID</label>
-                        <input type="text" class="form-control" id="userId" required>
+                        <label class="form-label">User ID</label>
+                        <input asp-for="UserID" type="text" class="form-control">
+                        <span asp-validation-for="UserID" class="text text-danger "></span>
                     </div>
 
                     <button type="submit" class="btn btn-success me-2">Save</button>

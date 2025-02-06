@@ -1,0 +1,29 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Quiz_Management.Models
+{
+    public class QuestionModel
+    {
+        public int QuestionID { get; set; }
+        [Required]
+        public string QuestionText { get; set; }
+        public int QuestionLevelID { get; set; }
+        [Required]
+        public string QuestionLevel { get; set; }
+        [Required]
+        public string OptionA { get; set; }
+        [Required]
+        public string OptionB { get; set; }
+        [Required]
+        public string OptionC { get; set; }
+        [Required]
+        public string OptionD { get; set; }
+        [Required]
+        public string CorrectOption { get; set; }
+        [Required]
+        public int QuestionMarks { get; set; }
+        public Boolean IsActive { get; set; }
+        public DateTime Created { get; set; }
+        public DateTime Modified { get; set; }
+    }
+}

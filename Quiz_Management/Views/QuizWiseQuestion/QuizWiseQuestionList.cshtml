@@ -1,4 +1,6 @@
-﻿<main id="main" class="main">
+﻿@model DataTable
+@using System.Data
+<main id="main" class="main">
     <div class="container-fluid">
         <!-- Search Section -->
         <div class="row mb-4">
@@ -39,9 +41,11 @@
                     <table class="table table-striped table-hover">
                         <thead>
                             <tr>
-                                <th>ID</th>
+                                <th>QuizWiseQuestions ID</th>
                                 <th>Quiz ID</th>
+                                <th>Quiz Name</th>
                                 <th>Question ID</th>
+                                <th>Question Name</th>
                                 <th>Created</th>
                                 <th>Modified</th>
                                 <th>Action</th>
