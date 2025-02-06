@@ -1,25 +1,27 @@
 ﻿@model Quiz_Management.Models.QuestionModel
 <main id="main" class="main">
-    <div class="container mt-4">
+    <div class="container-fluid">
+        <h2 style="color:steelblue" class="card-title fs-2">Question Add/Edit</h2>
         <div class="card">
             <div class="card-body">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb m-3">
-                        <li class="breadcrumb-item">Question</li>
+                    <ol class="breadcrumb mt-3">
+                        <li class="breadcrumb-item">
+                            <a asp-controller="Question" asp-action="QuestionList">Question</a>
+                        </li>
                         <li class="breadcrumb-item active">Question Add</li>
                     </ol>
                 </nav>
-
-                <h5 class="card-title mb-4">Question Add/Edit</h5>
-
                 <form>
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Question Text</label>
                         <textarea asp-for="QuestionText" class="form-control" rows="3"></textarea>
                         <span asp-validation-for="QuestionText" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Question Level</label>
                         <select asp-for="QuestionLevel" class="form-select">
                             <option value="">Select Level</option>
@@ -31,30 +33,35 @@
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Option A</label>
                         <input asp-for="OptionA" type="text" class="form-control">
                         <span asp-validation-for="OptionA" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Option B</label>
                         <input asp-for="OptionB" type="text" class="form-control">
                         <span asp-validation-for="OptionB" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Option C</label>
                         <input asp-for="OptionC" type="text" class="form-control">
                         <span asp-validation-for="OptionC" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Option D</label>
                         <input asp-for="OptionD" type="text" class="form-control">
                         <span asp-validation-for="OptionD" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Correct Option</label>
                         <select asp-for="CorrectOption" class="form-select">
                             <option value="">Select Correct Option</option>
@@ -67,19 +74,17 @@
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Question Marks</label>
                         <input asp-for="QuestionMarks" type="number" class="form-control">
                         <span asp-validation-for="QuestionMarks" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
-                        <div class="form-check">
-                            <input asp-for="IsActive" class="form-check-input" type="checkbox" id="isActive">
-                            <label class="form-check-label" for="isActive">
-                                Is Active
-                            </label>
-                            <span asp-validation-for="IsActive" class="text text-danger "></span>
-                        </div>
+                        <span class="text-danger">*</span>
+                        <label class="form-label">Is Active</label>
+                        <input asp-for="IsActive" type="number" class="form-control">
+                        <span asp-validation-for="IsActive" class="text text-danger"></span>
                     </div>
 
                     <button type="submit" class="btn btn-success me-2">Save</button>

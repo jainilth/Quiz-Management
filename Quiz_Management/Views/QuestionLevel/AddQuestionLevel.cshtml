@@ -1,11 +1,14 @@
 ﻿@model Quiz_Management.Models.QuestionLevelModel
 <main id="main" class="main">
-    <div class="container mt-4">
+    <div class="container-fluid">
+        <h2 style="color:steelblue" class="card-title fs-2">Question Level Add/Edit</h2>
         <div class="card">
             <div class="card-body">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb m-3">
-                        <li class="breadcrumb-item">Question Level</li>
+                    <ol class="breadcrumb mt-3">
+                        <li class="breadcrumb-item">
+                            <a asp-controller="QuestionLevel" asp-action="QuestionLevelList">Question Level</a>
+                        </li>
                         <li class="breadcrumb-item active">Question Level Add</li>
                     </ol>
                 </nav>
@@ -14,12 +17,14 @@
 
                 <form>
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Question Level</label>
                         <input asp-for="QuestionLevel" type="text" class="form-control">
                         <span asp-validation-for="QuestionLevel" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">User ID</label>
                         <input asp-for="UserID" type="text" class="form-control">
                         <span asp-validation-for="UserID" class="text text-danger "></span>

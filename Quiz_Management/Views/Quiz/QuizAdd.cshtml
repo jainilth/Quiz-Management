@@ -1,37 +1,41 @@
 ﻿@model Quiz_Management.Models.QuizModel
 <main id="main" class="main">
-    <div class="container mt-4">
+    <div class="container-fluid">
+        <h2 style="color:steelblue" class="card-title fs-2">Quiz Add/Edit</h2>
         <div class="card">
             <div class="card-body">
-                <nav aria-label="breadcrumb" class="m-3">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">Quiz</li>
-                        <li class="breadcrumb-item active">Quiz Add</li>
-                    </ol>
-                </nav>
-
-                <h5 class="card-title mb-4">Quiz Add/Edit</h5>
-
                 <form>
+                    <nav aria-label="breadcrumb" class="my-3">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a asp-controller="Quiz" asp-action="QuizList">Quiz</a>
+                            </li>
+                            <li class="breadcrumb-item active">Quiz Add</li>
+                        </ol>
+                    </nav>
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Quiz Name</label>
                         <input type="text" asp-for="QuizName" class="form-control">
                         <span asp-validation-for="QuizName" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Total Questions</label>
                         <input type="number" asp-for="TotalQuestions" class="form-control" id="totalQuestions">
                         <span asp-validation-for="TotalQuestions" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">Quiz Date</label>
                         <input type="date" asp-for="QuizDate" class="form-control" id="quizDate">
                         <span asp-validation-for="QuizDate" class="text text-danger "></span>
                     </div>
 
                     <div class="mb-3">
+                        <span class="text-danger">*</span>
                         <label class="form-label">User ID</label>
                         <input type="text" asp-for="UserID" class="form-control" id="userId">
                         <span asp-validation-for="UserID" class="text text-danger "></span>
