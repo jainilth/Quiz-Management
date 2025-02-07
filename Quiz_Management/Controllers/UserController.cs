@@ -53,7 +53,7 @@ namespace Quiz_Management.Controllers
                 command.ExecuteNonQuery();
                 return RedirectToAction("UserList");
             }
-            return View("AddEditUsers",model);
+            return View("AddEditUser",model);
         }
 
         public IActionResult DeleteUser(int UserID)
@@ -68,7 +68,7 @@ namespace Quiz_Management.Controllers
             sqlCommand.ExecuteNonQuery();
             return RedirectToAction("UserList");
         }
-        public IActionResult AddEditUsers(int UserID)
+        public IActionResult AddEditUser(int UserID)
         {
             string connectionString = this.configuration.GetConnectionString("ConnectionString");
             SqlConnection connection = new SqlConnection(connectionString);
@@ -91,7 +91,7 @@ namespace Quiz_Management.Controllers
                 model.IsActive = Convert.ToBoolean(@row["IsActive"]);
                 model.IsAdmin = Convert.ToBoolean(@row["IsAdmin"]);
             }
-            return View("AddEditUsers",model);
+            return View("AddEditUser",model);
         }
     }
 }
