@@ -5,7 +5,7 @@ namespace Quiz_Management.Models
 {
     public class QuizModel
     {
-        public int QuizID { get; set; }
+        public int QuizID { get; set; } // Nullable
         [Required]
         public string QuizName { get; set; }
         [Required]
@@ -13,10 +13,10 @@ namespace Quiz_Management.Models
         [Required]
         public DateTime QuizDate { get; set; }
         [Required]
-        public int UserID {  get; set; }
-        public string UserName { get; set; }  // From MST_User
+        public int UserID { get; set; }
         public DateTime Created { get; set; }
         public DateTime Modified { get; set; }
     }
+
 
 }

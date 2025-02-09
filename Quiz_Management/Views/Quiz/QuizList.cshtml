@@ -30,7 +30,7 @@
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                     <di class="m-3">
-                        <a class="btn btn-primary btn-sm px-4 py-2" asp-area="" asp-controller="Quiz" asp-action="QuizAdd">+ Add Quiz </a>
+                        <a class="btn btn-primary btn-sm px-4 py-2" asp-area="" asp-controller="Quiz" asp-action="QuizAddEdit">+ Add Quiz </a>
                     </di>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
@@ -53,20 +53,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>General Knowledge Qui</td>
-                                <td>20</td>
-                                <td>2024-01-15</td>
-                                <td>abc</td>
-                                <td>2024-01-28</td>
-                                <td>2024-01-28</td>
-                                <td>
-                                    <button style="width:100px" class="btn btn-sm btn-outline-primary me-1 mt-1">Edit</button>
-                                    <button style="width:100px" class="btn btn-sm btn-outline-danger mt-1">Delete</button>
-                                </td>
-                            </tr>
-
                             @{
                                 int i = 1;
                                 foreach (DataRow row in Model.Rows)
@@ -80,8 +66,15 @@
                                         <td>@row["Created"]</td>
                                         <td>@row["Modified"]</td>
                                         <td>
-                                            <a style="width:100px" class="btn btn-sm btn-outline-primary me-1 mt-1">Edit</a>
-                                            <a style="width:100px" class="btn btn-sm btn-outline-danger mt-1">Delete</a>
+                                            <a style="width:100px" class="btn btn-sm btn-outline-primary me-1 mt-1" asp-controller="Quiz" asp-action="QuizAddEdit" asp-route-QuizID="@row["QuizID"]">
+                                                <i class="bi bi-pencil"></i> Edit
+                                            </a>
+                                            <form method="post" asp-controller="Quiz" asp-action="DeleteQuiz" onsubmit="return confirmDelete()">
+                                                <input type="hidden" name="QuizID" value="@row["QuizID"]" />
+                                                <button style="width:100px" type="submit" class="btn btn-outline-danger btn-xs mt-1">
+                                                    <i class=" bi bi-trash3"> Delete</i>
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                     i = i + 1;
