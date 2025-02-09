@@ -241,6 +241,7 @@ BEGIN
         [dbo].[MST_Quiz].[QuizName],
 		[dbo].[MST_Quiz].[TotalQuestions],
         [dbo].[MST_Quiz].[QuizDate],
+		[dbo].[MST_Quiz].[UserID],
 		[dbo].[MST_User].[UserName],
         [dbo].[MST_Quiz].[Created],
         [dbo].[MST_Quiz].[Modified]
@@ -261,6 +262,7 @@ BEGIN
         [dbo].[MST_Quiz].[QuizName],
 		[dbo].[MST_Quiz].[TotalQuestions],
         [dbo].[MST_Quiz].[QuizDate],
+		[dbo].[MST_Quiz].[UserID],
 		[dbo].[MST_User].[UserName],
         [dbo].[MST_Quiz].[Created],
         [dbo].[MST_Quiz].[Modified]
