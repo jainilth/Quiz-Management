@@ -28,16 +28,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Projects/Quiz-Management/Quiz_Management/Views/QuestionLevel/AddQuestionLevel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25MZXZlbFxBZGRRdWVzdGlvbkxldmVsLmNzaHRtbA==
+[E:/Projects/Quiz-Management/Quiz_Management/Views/QuestionLevel/AddEditQuestionLevel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25MZXZlbFxBZGRFZGl0UXVlc3Rpb25MZXZlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Projects/Quiz-Management/Quiz_Management/Views/QuestionLevel/QuestionLevelList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25MZXZlbFxRdWVzdGlvbkxldmVsTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Projects/Quiz-Management/Quiz_Management/Views/Question/AddQuestion.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25cQWRkUXVlc3Rpb24uY3NodG1s
+[E:/Projects/Quiz-Management/Quiz_Management/Views/Question/AddEditQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25cQWRkRWRpdFF1ZXN0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Projects/Quiz-Management/Quiz_Management/Views/Question/QuestionList.cshtml]

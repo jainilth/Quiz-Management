@@ -474,6 +474,7 @@ BEGIN
     SELECT 
         [dbo].[MST_QuestionLevel].[QuestionLevelID],
         [dbo].[MST_QuestionLevel].[QuestionLevel],
+		[dbo].[MST_QuestionLevel].[UserID],
 		[dbo].[MST_User].[UserName],
         [dbo].[MST_QuestionLevel].[Created],
         [dbo].[MST_QuestionLevel].[Modified]
@@ -495,6 +496,7 @@ BEGIN
     SELECT 
         [dbo].[MST_QuestionLevel].[QuestionLevelID],
         [dbo].[MST_QuestionLevel].[QuestionLevel],
+		[dbo].[MST_QuestionLevel].[UserID],
 		[dbo].[MST_User].[UserName],
         [dbo].[MST_QuestionLevel].[Created],
         [dbo].[MST_QuestionLevel].[Modified]

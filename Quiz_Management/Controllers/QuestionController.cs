@@ -33,7 +33,7 @@ namespace Quiz_Management.Controllers
                 }
             }
         }
-        public IActionResult AddQuestion()
+        public IActionResult AddEditQuestion()
         {
             return View();
         }
