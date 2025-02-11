@@ -26,4 +26,9 @@ namespace Quiz_Management.Models
         public DateTime Created { get; set; }
         public DateTime Modified { get; set; }
     }
+    public class QuestionDropdownModel
+    {
+        public int QuestionID { get; set; }
+        public string QuestionText { get; set; }
+    }
 }

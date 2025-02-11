@@ -79,9 +79,9 @@ namespace Quiz.Controllers
             QuizModel model = new QuizModel();
             foreach (DataRow row in datatable.Rows)
             {
-                model.QuizName = row["QuizName"].ToString();
+                model.QuizName = @row["QuizName"].ToString();
                 model.TotalQuestions = Convert.ToInt32(@row["TotalQuestions"]);
-                model.QuizDate = Convert.ToDateTime(row["QuizDate"]);
+                model.QuizDate = Convert.ToDateTime(@row["QuizDate"]);
                 model.UserID = Convert.ToInt32(@row["UserID"]);
             }
             return View("QuizAddEdit", model);

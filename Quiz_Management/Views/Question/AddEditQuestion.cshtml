@@ -23,11 +23,12 @@
                     <div class="mb-3">
                         <span class="text-danger">*</span>
                         <label class="form-label">Question Level</label>
-                        <select asp-for="QuestionLevel" class="form-select">
+                        <select asp-for="QuestionLevelID" class="form-select">
                             <option value="">Select Level</option>
-                            <option value="1">Beginner</option>
-                            <option value="2">Intermediate</option>
-                            <option value="3">Advanced</option>
+                            @foreach (var level in ViewBag.QuestionLevel)
+							{
+                                <option value="@level.QuestionLevelID">@level.QuestionLevel</option>
+							})
                         </select>
                         <span asp-validation-for="QuestionLevel" class="text text-danger "></span>
                     </div>
@@ -82,8 +83,8 @@
 
                     <div class="mb-3">
                         <span class="text-danger">*</span>
+                        <input asp-for="IsActive" class="form-check-input">
                         <label class="form-label">Is Active</label>
-                        <input asp-for="IsActive" type="number" class="form-control">
                         <span asp-validation-for="IsActive" class="text text-danger"></span>
                     </div>
 

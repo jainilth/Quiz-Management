@@ -13,6 +13,10 @@ namespace Quiz_Management.Models
         public DateTime Created { get; set; }
         public DateTime Modified { get; set; }
     }
-
+    public class QuizDropdownModel
+    {
+        public int QuizID { get; set; }
+        public string QuizName { get; set; }
+    }
 
 }

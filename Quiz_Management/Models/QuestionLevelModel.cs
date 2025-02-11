@@ -12,4 +12,9 @@ namespace Quiz_Management.Models
         public DateTime Created {  get; set; }
         public DateTime Modified { get; set; }
     }
+    public class QuestionLevelDropdownModel
+    {
+        public int QuestionLevelID { get; set; }
+        public string QuestionLevel { get; set; }
+    }
 }

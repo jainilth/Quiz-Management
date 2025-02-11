@@ -380,6 +380,7 @@ BEGIN
         [dbo].[MST_Question].[CorrectOption],
         [dbo].[MST_Question].[QuestionMarks],
         [dbo].[MST_Question].[IsActive],
+		[dbo].[MST_Question].[UserID],
 		[dbo].[MST_User].[UserName],
         [dbo].[MST_Question].[Created],
         [dbo].[MST_Question].[Modified]
@@ -406,6 +407,7 @@ BEGIN
         [dbo].[MST_Question].[CorrectOption],
         [dbo].[MST_Question].[QuestionMarks],
         [dbo].[MST_Question].[IsActive],
+		[dbo].[MST_Question].[UserID],
 		[dbo].[MST_User].[UserName],
         [dbo].[MST_Question].[Created],
         [dbo].[MST_Question].[Modified]
