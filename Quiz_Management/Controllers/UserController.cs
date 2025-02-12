@@ -13,6 +13,8 @@ namespace Quiz_Management.Controllers
         {
             configuration = _configuration;
         }
+
+        #region User List
         public IActionResult UserList()
         {
             string connectionString = this.configuration.GetConnectionString("ConnectionString");
@@ -26,6 +28,8 @@ namespace Quiz_Management.Controllers
             dataTable.Load(sqlDataReader);
             return View(dataTable);
         }
+        #endregion
+
         public IActionResult UserSave(UserModel model)
         {
             if(ModelState.IsValid)
@@ -93,5 +97,7 @@ namespace Quiz_Management.Controllers
             }
             return View("AddEditUser",model);
         }
+
+        
     }
 }

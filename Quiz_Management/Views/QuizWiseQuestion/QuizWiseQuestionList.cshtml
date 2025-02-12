@@ -52,24 +52,29 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach(DataRow row in Model.Rows){
-                                <tr>
-                                    <td>@row["QuizWiseQuestionsID"]</td>
-                                    <td>@row["QuizName"]</td>
-                                    <td>@row["QuestionID"]</td>
-                                    <td>@row["QuestionText"]</td>
-                                    <td>@row["UserName"]</td>
-                                    <td>@row["Created"]</td>
-                                    <td>@row["Modified"]</td>
-                                    <td>
-                                        <button style="width:100px" class="btn btn-sm btn-outline-primary me-1 mt-1">
-                                            <i class="bi bi-pencil"></i> Edit
-                                        </button>
-                                        <button style="width:100px" class="btn btn-sm btn-outline-danger mt-1">
-                                            <i class="bi bi-trash"></i> Delete
-                                        </button>
-                                    </td>
-                                </tr>
+                            @{
+								int i = 1;
+                                foreach (DataRow row in Model.Rows)
+                                {
+                                    <tr>
+                                        <td>@i</td>
+                                        <td>@row["QuizName"]</td>
+                                        <td>@row["QuestionID"]</td>
+                                        <td>@row["QuestionText"]</td>
+                                        <td>@row["UserName"]</td>
+                                        <td>@row["Created"]</td>
+                                        <td>@row["Modified"]</td>
+                                        <td>
+                                            <button style="width:100px" class="btn btn-sm btn-outline-primary me-1 mt-1">
+                                                <i class="bi bi-pencil"></i> Edit
+                                            </button>
+                                            <button style="width:100px" class="btn btn-sm btn-outline-danger mt-1">
+                                                <i class="bi bi-trash"></i> Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+									i++;
+                                }
                             }
                         </tbody>
                     </table>

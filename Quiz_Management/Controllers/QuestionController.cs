@@ -59,9 +59,11 @@ namespace Quiz_Management.Controllers
                 command.Parameters.Add("@OptionC", SqlDbType.VarChar).Value = model.OptionC;
                 command.Parameters.Add("@OptionD", SqlDbType.VarChar).Value = model.OptionD;
                 command.Parameters.Add("@CorrectOption", SqlDbType.VarChar).Value = model.CorrectOption;
+                command.Parameters.Add("@UserID", SqlDbType.Int).Value = model.UserID;
                 command.Parameters.Add("@QuestionMarks", SqlDbType.Int).Value = model.QuestionMarks;
                 command.Parameters.Add("@IsActive", SqlDbType.Bit).Value = model.IsActive;
                 command.ExecuteNonQuery();
+
                 return RedirectToAction("QuestionList");
             }
             else
@@ -95,6 +97,7 @@ namespace Quiz_Management.Controllers
                 model.OptionC = @row["OptionC"].ToString();
                 model.OptionD = @row["OptionD"].ToString();
                 model.CorrectOption = @row["CorrectOption"].ToString();
+                model.UserID = Convert.ToInt32(@row["UserID"]);
                 model.QuestionMarks = Convert.ToInt32(@row["QuestionMarks"]);
                 model.IsActive = Convert.ToBoolean(@row["IsActive"]);
             }
@@ -114,7 +117,7 @@ namespace Quiz_Management.Controllers
         }
         public void QuestionLevelDropDown()
         {
-            string connectionString = this.configuration.GetConnectionString("ConnectionString");
+            string connectionString = configuration.GetConnectionString("ConnectionString");
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             SqlCommand command = connection.CreateCommand();
@@ -123,12 +126,13 @@ namespace Quiz_Management.Controllers
             SqlDataReader reader = command.ExecuteReader();
             DataTable dataTable = new DataTable();
             dataTable.Load(reader);
-            List<QuestionDropdownModel> list = new List<QuestionDropdownModel>();
+            List<QuestionLevelDropdownModel> list = new List<QuestionLevelDropdownModel>();
             foreach(DataRow data in dataTable.Rows)
             {
                 QuestionLevelDropdownModel model = new QuestionLevelDropdownModel();
                 model.QuestionLevelID = Convert.ToInt32(data["QuestionLevelID"]);
                 model.QuestionLevel = data["QuestionLevel"].ToString();
+                list.Add(model);
             }
             ViewBag.QuestionLevel = list;
         }

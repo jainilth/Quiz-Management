@@ -7,9 +7,10 @@ namespace Quiz_Management.Models
         public int QuestionID { get; set; }
         [Required]
         public string QuestionText { get; set; }
-        public int QuestionLevelID { get; set; }
         [Required]
-        public string QuestionLevel { get; set; }
+        public int QuestionLevelID { get; set; }
+
+        public string? QuestionLevel { get; set; }
         [Required]
         public string OptionA { get; set; }
         [Required]
@@ -22,6 +23,7 @@ namespace Quiz_Management.Models
         public string CorrectOption { get; set; }
         [Required]
         public int QuestionMarks { get; set; }
+        public int UserID { get; set; }
         public Boolean IsActive { get; set; }
         public DateTime Created { get; set; }
         public DateTime Modified { get; set; }

@@ -284,6 +284,7 @@ CREATE OR ALTER PROC PR_MST_Question_Insert
     @OptionC			NVARCHAR(100),
     @OptionD			NVARCHAR(100),
     @CorrectOption		NVARCHAR(100),
+	@IsActive			BIT,
     @QuestionMarks		INT,
     @UserID				INT
 AS
@@ -376,7 +377,7 @@ BEGIN
         [dbo].[MST_Question].[OptionB],
         [dbo].[MST_Question].[OptionC],
         [dbo].[MST_Question].[OptionD],
-		[dbo].[MST_Question].[OptionA]+','+[dbo].[MST_Question].[OptionB]+','+[dbo].[MST_Question].[OptionC]+','+[dbo].[MST_Question].[OptionD] AS All_in_One,
+		'(a)-'+[dbo].[MST_Question].[OptionA]+',(b)-'+[dbo].[MST_Question].[OptionB]+',(d)-'+[dbo].[MST_Question].[OptionC]+',(d)-'+[dbo].[MST_Question].[OptionD] AS All_in_One,
         [dbo].[MST_Question].[CorrectOption],
         [dbo].[MST_Question].[QuestionMarks],
         [dbo].[MST_Question].[IsActive],
