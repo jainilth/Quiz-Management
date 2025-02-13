@@ -372,6 +372,7 @@ BEGIN
     SELECT 
         [dbo].[MST_Question].[QuestionID],
         [dbo].[MST_Question].[QuestionText],
+		[dbo].[MST_QuestionLevel].[QuestionLevelID],
         [dbo].[MST_QuestionLevel].[QuestionLevel],
         [dbo].[MST_Question].[OptionA],
         [dbo].[MST_Question].[OptionB],
@@ -399,6 +400,7 @@ BEGIN
     SELECT 
         [dbo].[MST_Question].[QuestionID],
         [dbo].[MST_Question].[QuestionText],
+		[dbo].[MST_QuestionLevel].[QuestionLevelID],
         [dbo].[MST_QuestionLevel].[QuestionLevel],
         [dbo].[MST_Question].[OptionA],
         [dbo].[MST_Question].[OptionB],

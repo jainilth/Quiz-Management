@@ -38,6 +38,7 @@ namespace Quiz_Management.Controllers
         {
             if (ModelState.IsValid)
             {
+                QuestionLevelDropDown();
                 string connectionString = configuration.GetConnectionString("ConnectionString");
                 SqlConnection sqlConnection = new SqlConnection(connectionString);
                 sqlConnection.Open();
@@ -90,8 +91,7 @@ namespace Quiz_Management.Controllers
             {
                 model.QuestionID = Convert.ToInt32(@row["QuestionID"]);
                 model.QuestionText = @row["QuestionText"].ToString();
-                //model.QuestionLevelID = Convert.ToInt32(@row["QuestionLevelID"]);
-                model.QuestionLevel = @row["QuestionLevel"].ToString();
+                model.QuestionLevelID = Convert.ToInt32(@row["QuestionLevelID"]);
                 model.OptionA = @row["OptionA"].ToString();
                 model.OptionB = @row["OptionB"].ToString();
                 model.OptionC = @row["OptionC"].ToString();
