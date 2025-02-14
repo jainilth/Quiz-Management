@@ -30,6 +30,7 @@ namespace Quiz_Management.Controllers
         }
         #endregion
 
+        #region User Save
         public IActionResult UserSave(UserModel model)
         {
             if(ModelState.IsValid)
@@ -59,7 +60,9 @@ namespace Quiz_Management.Controllers
             }
             return View("AddEditUser",model);
         }
+        #endregion
 
+        #region Delete User
         public IActionResult DeleteUser(int UserID)
         {
             string connectionString = this.configuration.GetConnectionString("ConnectionString");
@@ -72,6 +75,9 @@ namespace Quiz_Management.Controllers
             sqlCommand.ExecuteNonQuery();
             return RedirectToAction("UserList");
         }
+        #endregion
+
+        #region Add or Edit User
         public IActionResult AddEditUser(int UserID)
         {
             string connectionString = this.configuration.GetConnectionString("ConnectionString");
@@ -97,7 +103,37 @@ namespace Quiz_Management.Controllers
             }
             return View("AddEditUser",model);
         }
+        #endregion
 
-        
+        #region User Regrestration
+        public IActionResult UserRegister(UserRegisterModel userRegisterModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    string connectionString = this.configuration.GetConnectionString("ConnectionString");
+                    SqlConnection sqlConnection = new SqlConnection(connectionString);
+                    sqlConnection.Open();
+                    SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                    sqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
+                    sqlCommand.CommandText = "PR_MST_User_Insert";
+                    sqlCommand.Parameters.Add("@UserName", SqlDbType.VarChar).Value = userRegisterModel.UserName;
+                    sqlCommand.Parameters.Add("@Password", SqlDbType.VarChar).Value = userRegisterModel.Password;
+                    sqlCommand.Parameters.Add("@Email", SqlDbType.VarChar).Value = userRegisterModel.Email;
+                    sqlCommand.Parameters.Add("@MobileNo", SqlDbType.VarChar).Value = userRegisterModel.MobileNo;
+                    sqlCommand.ExecuteNonQuery();
+                    return RedirectToAction("UserList");
+                }
+            }
+            catch (Exception e)
+            {
+                TempData["ErrorMessage"] = e.Message;
+                return RedirectToAction("Register");
+            }
+            return RedirectToAction("Register");
+        }
+        #endregion 
     }
 }
+//"Login", "User"

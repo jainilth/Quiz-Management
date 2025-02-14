@@ -44,8 +44,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25cUXVlc3Rpb25MaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Projects/Quiz-Management/Quiz_Management/Views/QuizWiseQuestion/AddQuizWiseQuestion.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpeldpc2VRdWVzdGlvblxBZGRRdWl6V2lzZVF1ZXN0aW9uLmNzaHRtbA==
+[E:/Projects/Quiz-Management/Quiz_Management/Views/QuizWiseQuestion/AddEditQuizWiseQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpeldpc2VRdWVzdGlvblxBZGRFZGl0UXVpeldpc2VRdWVzdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Projects/Quiz-Management/Quiz_Management/Views/QuizWiseQuestion/QuizWiseQuestionList.cshtml]

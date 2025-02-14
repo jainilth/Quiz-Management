@@ -13,6 +13,7 @@ namespace Quiz_Management.Controllers
         {
             configuration = _configuration;
         }
+        #region QuestionList
         public IActionResult QuestionList()
         {
             string connectionString = configuration.GetConnectionString("ConnectionString");
@@ -34,6 +35,9 @@ namespace Quiz_Management.Controllers
                 }
             }
         }
+        #endregion
+
+        #region Question Save
         public IActionResult QuestionSave(QuestionModel model)
         {
             if (ModelState.IsValid)
@@ -73,6 +77,9 @@ namespace Quiz_Management.Controllers
                 return View("AddEditQuestion", model);
             }
         }
+        #endregion
+
+        #region Add or Edit Question
         public IActionResult AddEditQuestion(int QuestionID)
         {
             QuestionLevelDropDown();
@@ -103,6 +110,9 @@ namespace Quiz_Management.Controllers
             }
             return View("AddEditQuestion",model);
         }
+        #endregion
+
+        #region Question Delete
         public IActionResult QuestionDelete(int QuestionID)
         {
             string connectionString = configuration.GetConnectionString("ConnectionString");
@@ -115,6 +125,9 @@ namespace Quiz_Management.Controllers
             command.ExecuteNonQuery();
             return RedirectToAction("QuestionList");
         }
+        #endregion
+
+        #region Question DropDown
         public void QuestionLevelDropDown()
         {
             string connectionString = configuration.GetConnectionString("ConnectionString");
@@ -136,5 +149,6 @@ namespace Quiz_Management.Controllers
             }
             ViewBag.QuestionLevel = list;
         }
+        #endregion
     }
 }

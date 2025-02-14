@@ -56,8 +56,6 @@
                                 <th>Is Active</th>
                                 <th>User name</th>
                                 <th>Created</th>
-                                <th>Modified</th>
-                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -69,13 +67,16 @@
                                         <td align="center">@i</td>
                                         <td>@row["QuestionText"]</td>
                                         <td align="center">@row["QuestionLevel"]</td>
-                                        <td>@row["All_in_One"]</td>
+                                        <td>
+                                            (a) @row["OptionA"]<br />
+                                            (b) @row["OptionB"]<br />
+                                            (c) @row["OptionC"]<br />
+                                            (d) @row["OptionD"]<br />
+                                        </td>
                                         <td align="center">@row["CorrectOption"]</td>
                                         <td align="center">@row["QuestionMarks"]</td>
                                         <td align="center">@row["IsActive"]</td>
                                         <td>@row["UserName"]</td>
-                                        <td>@row["Created"]</td>
-                                        <td>@row["Modified"]</td>
                                         <td>
                                             <a style="width:100px" class="btn btn-sm btn-outline-primary me-1 mt-1" asp-controller="Question" asp-action="AddEditQuestion" asp-route-QuestionID="@row["QuestionID"]">
                                                 <i class="bi bi-pencil"></i> Edit
