@@ -169,6 +169,33 @@ BEGIN
 END
 --EXEC PR_MST_User_SelectByID 1
 
+CREATE PROCEDURE [dbo].[PR_User_Login]
+    @UserName NVARCHAR(50),
+    @Password NVARCHAR(50)
+AS
+BEGIN
+    SELECT 
+        [dbo].[MST_User].[UserID],
+		[dbo].[MST_User].[UserName],
+		[dbo].[MST_User].[Password],
+		[dbo].[MST_User].[Email],
+		[dbo].[MST_User].[Mobile],
+		[dbo].[MST_User].[IsActive],	
+		[dbo].[MST_User].[IsAdmin],	
+		[dbo].[MST_User].[Created],
+		[dbo].[MST_User].[Modified]
+    FROM 
+        [dbo].[MST_User] 
+    WHERE 
+        (
+			[dbo].[MST_User].[UserName] = @UserName or
+			[dbo].[MST_User].[Email] = @UserName or
+			[dbo].[MST_User].[Mobile] = @UserName
+		)
+        AND [dbo].[MST_User].[Password] = @Password;
+END
+--exec PR_User_Login '1234567890','jainil@123'
+
 -------------------------------Stored Procedures for MST_Quiz Table----------------------------
 --Stored Procedures for MST_Quiz Table Insert
 CREATE OR ALTER PROC PR_MST_Quiz_Insert

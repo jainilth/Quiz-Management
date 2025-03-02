@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Quiz_Management.Models;
 using System.Reflection;
+using Quiz_Management;
 
 namespace Quiz.Controllers
 {
+    [CheckAccess]
     public class QuizController : Controller
     {
         private IConfiguration configuration;

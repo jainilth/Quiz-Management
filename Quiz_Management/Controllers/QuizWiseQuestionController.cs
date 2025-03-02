@@ -6,6 +6,7 @@ using Quiz_Management.Models;
 
 namespace Quiz_Management.Controllers
 {
+    [CheckAccess]
     public class QuizWiseQuestionController : Controller
     {
         private IConfiguration configuration;

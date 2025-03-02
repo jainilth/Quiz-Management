@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
 
 namespace Quiz_Management.Models
 {
@@ -34,5 +35,15 @@ namespace Quiz_Management.Models
 
         [Required(ErrorMessage = "Mobile Number is required.")]
         public string MobileNo { get; set; }
+        public bool IsActive { get; set; }
+        public bool IsAdmin { get; set; }
+    }
+    public class UserLoginModel
+    {
+        [Required(ErrorMessage = "Username is required.")]
+        public string UserName { get; set; }
+
+        [Required(ErrorMessage = "Password is required.")]
+        public string Password { get; set; }
     }
 }

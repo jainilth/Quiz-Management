@@ -251,7 +251,7 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
+                            <a class="dropdown-item d-flex align-items-center" asp-controller="User" asp-action="Logout">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Sign Out</span>
                             </a>
@@ -269,10 +269,12 @@
 
         <ul class="sidebar-nav" id="sidebar-nav">
              
-            <a class="nav-link collapsed" asp-controller="Home" asp-action="Index">
-                <i class="bi bi-grid"></i>
-                <span>Dashboard</span>
-            </a>
+            <li class="nav-item">
+                <a class="nav-link collapsed" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#Quiz-nav" data-bs-toggle="collapse" href="#">
@@ -345,8 +347,7 @@
                     </li>
                 </ul>
             </li><!-- End QuizWiseQuestion Nav -->
-
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#User-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-people"></i><span>User</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
@@ -362,12 +363,15 @@
                         </a>
                     </li>
                 </ul>
-            </li><!-- End User Nav -->
+            </li> End User Nav -->
 
-            <a class="nav-link collapsed" asp-controller="User" asp-action="UserRegister">
-                <i class="bi bi-grid"></i>
-                <span>Register</span>
-            </a>
+            <li class="nav-item">
+                <a class="nav-link collapsed" asp-controller="User" asp-action="Register">
+                    <i class="bi bi-grid"></i>
+                    <span>Register</span>
+                </a>
+            </li>
+            
 
             <!-- <li class="nav-heading">Pages</li>
 
