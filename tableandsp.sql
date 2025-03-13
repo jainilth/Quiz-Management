@@ -39,6 +39,7 @@ CREATE TABLE MST_Question (
     UserID				INT NOT NULL,
     Created				DATETIME NOT NULL DEFAULT GETDATE(),
     Modified			DATETIME NOT NULL,
+	FOREIGN KEY (QuestionLevelID) REFERENCES MST_QuestionLevel(QuestionLevelID),
     FOREIGN KEY (UserID) REFERENCES MST_User(UserID)
 );
 

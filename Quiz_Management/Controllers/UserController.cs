@@ -132,7 +132,7 @@ namespace Quiz_Management.Controllers
                 sqlCommand.Parameters.Add("@Mobile", SqlDbType.VarChar).Value = userRegisterModel.MobileNo;
                 sqlCommand.Parameters.Add("@IsAdmin", SqlDbType.Bit).Value = userRegisterModel.IsAdmin;
                 sqlCommand.ExecuteNonQuery();
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Login","User");
             }
             return RedirectToAction("Register");
         }

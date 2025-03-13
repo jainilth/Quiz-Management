@@ -27,12 +27,11 @@
                     <div class="mb-3">
                         <span class="text-danger">*</span>
                         <label class="form-label">User ID</label>
-                        <input asp-for="UserID" type="text" class="form-control">
+                        <input value="" asp-for="UserID" type="text" class="form-control">
                         <span asp-validation-for="UserID" class="text text-danger "></span>
                     </div>
 
                     <button type="submit" class="btn btn-success me-2">Save</button>
-                    <button type="button" class="btn btn-danger">Reset</button>
                     <a class="btn btn-warning ms-1" asp-controller="QuestionLevel" asp-action="QuestionLevelList">
                         Back
                     </a>

@@ -84,3 +84,14 @@ E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\refint\Quiz_Managem
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\Quiz_Management.pdb
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\Quiz_Management.genruntimeconfig.cache
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\ref\Quiz_Management.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\EPPlus.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\EPPlus.Interfaces.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

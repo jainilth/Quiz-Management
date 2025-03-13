@@ -1,10 +1,9 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Quiz_Management.Models;
-using System.Reflection;
 using Quiz_Management;
+using OfficeOpenXml;
 
 namespace Quiz.Controllers
 {
@@ -100,5 +99,59 @@ namespace Quiz.Controllers
             Command.ExecuteNonQuery();
             return RedirectToAction("QuizList");
         }
+        public IActionResult ExportToExcel()
+        {
+            string connectionString = configuration.GetConnectionString("ConnectionString");
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            sqlConnection.Open();
+
+            SqlCommand sqlCommand = sqlConnection.CreateCommand();
+            sqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
+            sqlCommand.CommandText = "PR_MST_Quiz_SelectAll";
+
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            DataTable data = new DataTable();
+            data.Load(sqlDataReader);
+
+            using (var package = new ExcelPackage())
+            {
+                var worksheet = package.Workbook.Worksheets.Add("QuizData");
+
+                // Add headers
+                worksheet.Cells[1, 1].Value = "QuizID";
+                worksheet.Cells[1, 2].Value = "QuizName";
+                worksheet.Cells[1, 3].Value = "TotalQuestions";
+                worksheet.Cells[1, 4].Value = "QuizDate";
+                worksheet.Cells[1, 5].Value = "UserName";
+                worksheet.Cells[1, 6].Value = "Created";
+                worksheet.Cells[1, 7].Value = "Modified";
+
+                // Add data
+                int row = 2;
+                foreach (DataRow item in data.Rows)
+                {
+                    worksheet.Cells[row, 1].Value = item["QuizID"];
+                    worksheet.Cells[row, 2].Value = item["QuizName"];
+                    worksheet.Cells[row, 3].Value = item["TotalQuestions"];
+                    worksheet.Cells[row, 4].Value = item["QuizDate"];
+                    worksheet.Cells[row, 5].Value = item["UserName"];
+                    worksheet.Cells[row, 6].Value = item["Created"];
+                    worksheet.Cells[row, 7].Value = item["Modified"];
+                    row++;
+                }
+
+                var stream = new MemoryStream();
+                package.SaveAs(stream);
+                stream.Position = 0;
+
+                string excelName = $"Data-{DateTime.Now:yyyyMMddHHmmss}.xlsx";
+                return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", excelName);
+            }
+        }
     }
 }
+
+
+
+
+

@@ -32,14 +32,20 @@
                     <di class="m-3">
                         <a class="btn btn-primary btn-sm px-4 py-2" asp-area="" asp-controller="Quiz" asp-action="QuizAddEdit">+ Add Quiz </a>
                     </di>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <di class="m-3">
+                        <a class="btn btn-primary btn-sm px-4 py-2" asp-area="" asp-controller="Quiz" asp-action="ExportToExcel">Export to exel</a>
+                    </di>
 
-                    </form>
+                    <div class="pull-right col-md-3 my-2 mx-2">
+                        <div id="sample_1_filter" class="dataTables_filter">
+                            <input type="text" class="form-control input-group-sm input-small input-inline" id="sample_1" placeholder="Search" aria-controls="sample_1">
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="table-responsive">
-                    <table class="table table-striped table-hover">
+                    <table id="sample_1" class="table table-striped table-hover">
                         <thead>
                             <tr>
                                 <th>Quiz Id</th>
@@ -52,7 +58,7 @@
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="sample_2">
                             @{
                                 int i = 1;
                                 foreach (DataRow row in Model.Rows)
@@ -71,17 +77,18 @@
                                             </a>
                                             <form method="post" asp-controller="Quiz" asp-action="DeleteQuiz" onsubmit="return confirmDelete()">
                                                 <input type="hidden" name="QuizID" value="@row["QuizID"]" />
-                                                <button style="width:100px" type="submit" class="btn btn-outline-danger btn-xs mt-1">
-                                                    <i class=" bi bi-trash3"> Delete</i>
+                                                <button onclick="return confirm('Are you sure you want to delete this user?');" style="width:100px" type="submit" class="btn btn-outline-danger btn-xs mt-1">
+                                                    <i class="bi bi-trash3"> Delete</i>
                                                 </button>
                                             </form>
                                         </td>
                                     </tr>
-                                    i = i + 1;
+                                    i++;
                                 }
                             }
                         </tbody>
                     </table>
+
                 </div>
                 
                 <div class="d-flex justify-content-between align-items-center">
@@ -104,8 +111,18 @@
         </div>
     </div>
 </main>
-<script>
-    function confirmDelete() {
-        return confirm("Are you Sure! You want to Delete this record from Quiz-table?")
-    }
-</script>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            // Ensure the correct input field is used for search
+            $("#quizSearch").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#sample_2 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+        });
+    </script>
+}
