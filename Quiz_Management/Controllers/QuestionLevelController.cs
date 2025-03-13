@@ -31,6 +31,7 @@ namespace Quiz_Management.Controllers
         }
         public IActionResult QuestionLevelSave(QuestionLevelModel model)
         {
+            int UserID = Convert.ToInt32(HttpContext.Session.GetString("UserID"));
             if (ModelState.IsValid)
             {
                 string connectionString = configuration.GetConnectionString("ConnectionString");
@@ -48,7 +49,7 @@ namespace Quiz_Management.Controllers
                     command.Parameters.AddWithValue("@QuestionLevelID", model.QuestionLevelID);
                 }
                 command.Parameters.AddWithValue("@QuestionLevel", model.QuestionLevel);
-                command.Parameters.AddWithValue("@UserID", model.UserID);
+                command.Parameters.AddWithValue("@UserID", UserID);
                 command.ExecuteNonQuery();
                 return RedirectToAction("QuestionLevelList");
             }

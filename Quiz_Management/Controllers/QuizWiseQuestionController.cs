@@ -34,6 +34,7 @@ namespace Quiz_Management.Controllers
         #region Quiz wise Question Save
         public IActionResult QuizWiseQuestionSave(QuizWiseQuestionModel model)
         {
+            int UserID = Convert.ToInt32(HttpContext.Session.GetString("UserID"));
             if (ModelState.IsValid)
             {
                 QuizDropDown();
@@ -53,7 +54,7 @@ namespace Quiz_Management.Controllers
                     command.Parameters.Add("@QuizWiseQuestionsID", SqlDbType.Int).Value = model.QuizWiseQuestionsID;
                 }
                 command.Parameters.Add("@QuizID", SqlDbType.Int).Value = model.QuizID;
-                command.Parameters.Add("@UserID", SqlDbType.Int).Value = model.UserID;
+                command.Parameters.Add("@UserID", SqlDbType.Int).Value = UserID;
                 command.Parameters.Add("@QuestionID", SqlDbType.Int).Value = model.QuestionID;
                 command.ExecuteNonQuery();
 

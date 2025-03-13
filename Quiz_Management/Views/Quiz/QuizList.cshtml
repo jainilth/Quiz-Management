@@ -117,7 +117,7 @@
     <script>
         $(document).ready(function () {
             // Ensure the correct input field is used for search
-            $("#quizSearch").on("keyup", function () {
+            $("#sample_1").on("keyup", function () {
                 var value = $(this).val().toLowerCase();
                 $("#sample_2 tr").filter(function () {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);

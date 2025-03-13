@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Quiz_Management.Models;
 using Quiz_Management;
 using OfficeOpenXml;
+using Microsoft.Extensions.Configuration.UserSecrets;
 
 namespace Quiz.Controllers
 {
@@ -39,7 +40,8 @@ namespace Quiz.Controllers
 
         public IActionResult QuizSave(QuizModel model)
         {
-            if(ModelState.IsValid)
+            int UserID = Convert.ToInt32(HttpContext.Session.GetString("UserID"));
+            if (ModelState.IsValid)
             {
                 string connectionString = configuration.GetConnectionString("ConnectionString");
                 SqlConnection sqlConnection = new SqlConnection(connectionString);
@@ -58,7 +60,7 @@ namespace Quiz.Controllers
                 command.Parameters.Add("@QuizName", SqlDbType.VarChar).Value = model.QuizName;
                 command.Parameters.Add("@TotalQuestions", SqlDbType.Int).Value = model.TotalQuestions;
                 command.Parameters.Add("@QuizDate", SqlDbType.DateTime).Value = model.QuizDate;
-                command.Parameters.Add("@UserID", SqlDbType.Int).Value = model.UserID;
+                command.Parameters.Add("@UserID", SqlDbType.Int).Value = UserID;
                 command.ExecuteNonQuery();
                 return RedirectToAction("QuizList");
             }

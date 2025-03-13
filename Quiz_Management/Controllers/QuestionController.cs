@@ -41,6 +41,7 @@ namespace Quiz_Management.Controllers
         #region Question Save
         public IActionResult QuestionSave(QuestionModel model)
         {
+            int UserID = Convert.ToInt32(HttpContext.Session.GetString("UserID"));
             if (ModelState.IsValid)
             {
                 QuestionLevelDropDown();
@@ -65,7 +66,7 @@ namespace Quiz_Management.Controllers
                 command.Parameters.Add("@OptionC", SqlDbType.VarChar).Value = model.OptionC;
                 command.Parameters.Add("@OptionD", SqlDbType.VarChar).Value = model.OptionD;
                 command.Parameters.Add("@CorrectOption", SqlDbType.VarChar).Value = model.CorrectOption;
-                command.Parameters.Add("@UserID", SqlDbType.Int).Value = model.UserID;
+                command.Parameters.Add("@UserID", SqlDbType.Int).Value = UserID;
                 command.Parameters.Add("@QuestionMarks", SqlDbType.Int).Value = model.QuestionMarks;
                 command.Parameters.Add("@IsActive", SqlDbType.Bit).Value = model.IsActive;
                 command.ExecuteNonQuery();
