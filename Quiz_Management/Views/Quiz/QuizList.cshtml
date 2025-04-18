@@ -35,17 +35,10 @@
                     <di class="m-3">
                         <a class="btn btn-primary btn-sm px-4 py-2" asp-area="" asp-controller="Quiz" asp-action="ExportToExcel">Export to exel</a>
                     </di>
-
-                    <div class="pull-right col-md-3 my-2 mx-2">
-                        <div id="sample_1_filter" class="dataTables_filter">
-                            <input type="text" class="form-control input-group-sm input-small input-inline" id="sample_1" placeholder="Search" aria-controls="sample_1">
-                        </div>
-                    </div>
-
                 </div>
 
                 <div class="table-responsive">
-                    <table id="sample_1" class="table table-striped table-hover">
+                    <table id="sample_1" class="table table-striped table-hover datatable">
                         <thead>
                             <tr>
                                 <th>Quiz Id</th>
@@ -90,39 +83,7 @@
                     </table>
 
                 </div>
-                
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>Showing 1 to 3 of 3 entries</div>
-                    <nav>
-                        <ul class="pagination mb-0">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#">Previous</a>
-                            </li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#">1</a>
-                            </li>
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
         </div>
     </div>
 </main>
-
-@section Scripts
-{
-    <script>
-        $(document).ready(function () {
-            // Ensure the correct input field is used for search
-            $("#sample_1").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#sample_2 tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-                });
-            });
-        });
-    </script>
-}

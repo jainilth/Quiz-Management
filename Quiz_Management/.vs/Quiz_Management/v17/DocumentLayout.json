@@ -3,76 +3,40 @@
   "WorkspaceRootPath": "E:\\Projects\\Quiz-Management\\Quiz_Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\questionlevel\\addeditquestionlevel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\questionlevel\\addeditquestionlevel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\models\\questionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:models\\questionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\question\\questionlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\question\\questionlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\question\\addeditquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\question\\addeditquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\quizwisequestion\\addeditquizwisequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\quizwisequestion\\addeditquizwisequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\controllers\\quizwisequestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:controllers\\quizwisequestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\controllers\\questionlevelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:controllers\\questionlevelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\quiz\\quizaddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\quiz\\quizaddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\checkaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:checkaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\quiz\\quizlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\quiz\\quizlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\shared\\_layout_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\shared\\_layout_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\shared\\_layout_register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\shared\\_layout_register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\commonvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:commonvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|e:\\projects\\quiz-management\\quiz_management\\checkaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D846605-F92C-4FA8-9F27-DC20562EFD57}|Quiz_Management.csproj|solutionrelative:checkaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,124 +46,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddEditQuestionLevel.cshtml",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\QuestionLevel\\AddEditQuestionLevel.cshtml",
-              "RelativeDocumentMoniker": "Views\\QuestionLevel\\AddEditQuestionLevel.cshtml",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\QuestionLevel\\AddEditQuestionLevel.cshtml",
-              "RelativeToolTip": "Views\\QuestionLevel\\AddEditQuestionLevel.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T05:15:16.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddEditQuizWiseQuestion.cshtml",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\QuizWiseQuestion\\AddEditQuizWiseQuestion.cshtml",
-              "RelativeDocumentMoniker": "Views\\QuizWiseQuestion\\AddEditQuizWiseQuestion.cshtml",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\QuizWiseQuestion\\AddEditQuizWiseQuestion.cshtml",
-              "RelativeToolTip": "Views\\QuizWiseQuestion\\AddEditQuizWiseQuestion.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T05:14:52.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QuizWiseQuestionController.cs",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuizWiseQuestionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuizWiseQuestionController.cs",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuizWiseQuestionController.cs",
-              "RelativeToolTip": "Controllers\\QuizWiseQuestionController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwDgAAABJAAAAAAAAAA==",
+              "Title": "QuestionModel.cs",
+              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Models\\QuestionModel.cs",
+              "RelativeDocumentMoniker": "Models\\QuestionModel.cs",
+              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Models\\QuestionModel.cs",
+              "RelativeToolTip": "Models\\QuestionModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwBgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T05:14:19.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T14:50:56.705Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "QuestionLevelController.cs",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuestionLevelController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuestionLevelController.cs",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuestionLevelController.cs",
-              "RelativeToolTip": "Controllers\\QuestionLevelController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwDMAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T05:13:28.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QuestionController.cs",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuestionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuestionController.cs",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuestionController.cs",
-              "RelativeToolTip": "Controllers\\QuestionController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwEQAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T05:12:57.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "QuizAddEdit.cshtml",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Quiz\\QuizAddEdit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Quiz\\QuizAddEdit.cshtml",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Quiz\\QuizAddEdit.cshtml",
-              "RelativeToolTip": "Views\\Quiz\\QuizAddEdit.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T05:06:46.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "AddEditQuestion.cshtml",
               "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Question\\AddEditQuestion.cshtml",
               "RelativeDocumentMoniker": "Views\\Question\\AddEditQuestion.cshtml",
               "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Question\\AddEditQuestion.cshtml",
               "RelativeToolTip": "Views\\Question\\AddEditQuestion.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T03:58:46.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T14:49:43.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "QuizList.cshtml",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Quiz\\QuizList.cshtml",
-              "RelativeDocumentMoniker": "Views\\Quiz\\QuizList.cshtml",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Quiz\\QuizList.cshtml",
-              "RelativeToolTip": "Views\\Quiz\\QuizList.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "QuestionList.cshtml",
+              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Question\\QuestionList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Question\\QuestionList.cshtml",
+              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Question\\QuestionList.cshtml",
+              "RelativeToolTip": "Views\\Question\\QuestionList.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAYwHYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T03:11:12.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T14:47:03.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QuizController.cs",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuizController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuizController.cs",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuizController.cs",
-              "RelativeToolTip": "Controllers\\QuizController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAYwCoAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T02:45:07.82Z",
+              "WhenOpened": "2025-03-18T14:46:00.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuestionController.cs",
+              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "Controllers\\QuestionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:44:41.038Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommonVariable.cs",
+              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\CommonVariable.cs",
+              "RelativeDocumentMoniker": "CommonVariable.cs",
+              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\CommonVariable.cs",
+              "RelativeToolTip": "CommonVariable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T05:41:57.909Z"
             },
             {
               "$type": "Document",
@@ -211,96 +131,23 @@
               "RelativeToolTip": "CheckAccess.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T10:47:51.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T10:47:51.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\User\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\User\\Login.cshtml",
-              "RelativeToolTip": "Views\\User\\Login.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T10:37:59.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_Layout_Login.cshtml",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Shared\\_Layout_Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout_Login.cshtml",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Shared\\_Layout_Login.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout_Login.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T10:31:47.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\User\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\Register.cshtml",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\User\\Register.cshtml",
-              "RelativeToolTip": "Views\\User\\Register.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T04:26:07.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAzwIYAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T04:41:15.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcBAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4BAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-25T03:34:45.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "Models\\UserModel.cs",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Models\\UserModel.cs",
-              "RelativeToolTip": "Models\\UserModel.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAmwCkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:26:32.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_Layout_Register.cshtml",
-              "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Shared\\_Layout_Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout_Register.cshtml",
-              "ToolTip": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Shared\\_Layout_Register.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout_Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T04:23:37.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",

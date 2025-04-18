@@ -16,7 +16,7 @@
                     <input hidden asp-for="QuizWiseQuestionsID" />
                     <div class="mb-3">
                         <span class="text-danger">*</span>
-                        <label for="quizId" class="form-label">Quiz ID</label>
+                        <label for="quizId" class="form-label">Quiz Level</label>
                         <select asp-for="QuizID" class="form-select" required>
                             <option value="">-- Select Level --</option>
                             @foreach (var level in ViewBag.Quiz)
@@ -29,7 +29,7 @@
 
                     <div class="mb-3">
                         <span class="text-danger">*</span>
-                        <label for="questionId" class="form-label">Question ID</label>
+                        <label for="questionId" class="form-label">Question Text</label>
                         <select asp-for="QuestionID" class="form-select" required>
                             <option value="">-- Select Level --</option>
                             @foreach (var level in ViewBag.Question)

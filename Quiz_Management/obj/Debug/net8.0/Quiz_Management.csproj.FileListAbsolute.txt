@@ -77,7 +77,6 @@ E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\staticwebassets\msb
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Quiz_Management.props
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Quiz_Management.props
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\staticwebassets.pack.json
-E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\Quiz_Man.92F70D92.Up2Date
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\Quiz_Management.dll
 E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\refint\Quiz_Management.dll
@@ -95,3 +94,4 @@ E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\System.Drawing.Comm
 E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 E:\Projects\Quiz-Management\Quiz_Management\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\Projects\Quiz-Management\Quiz_Management\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

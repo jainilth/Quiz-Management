@@ -117,16 +117,31 @@ namespace Quiz_Management.Controllers
         #region Question Delete
         public IActionResult QuestionDelete(int QuestionID)
         {
-            string connectionString = configuration.GetConnectionString("ConnectionString");
-            SqlConnection connection = new SqlConnection(connectionString);
-            connection.Open();
-            SqlCommand command = connection.CreateCommand();
-            command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "PR_MST_Question_Delete";
-            command.Parameters.AddWithValue("@QuestionID", QuestionID);
-            command.ExecuteNonQuery();
-            return RedirectToAction("QuestionList");
+            try
+            {
+                string connectionString = configuration.GetConnectionString("ConnectionString");
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    SqlCommand command = connection.CreateCommand();
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.CommandText = "PR_MST_Question_Delete";
+                    command.Parameters.Add("@QuestionID", SqlDbType.Int).Value = QuestionID;
+
+
+                    command.ExecuteNonQuery();
+                }
+
+                TempData["SuccessMessage"] = "Question deleted successfully.";
+                return RedirectToAction("QuestionList");
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = "An error occurred while deleting the Question: " + ex.Message;
+                return RedirectToAction("QuestionList");
+            }
         }
+
         #endregion
 
         #region Question DropDown
