@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj": {}
+    "D:\\jainil\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj": {
+    "D:\\jainil\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj",
+        "projectUniqueName": "D:\\jainil\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj",
         "projectName": "Quiz_Management",
-        "projectPath": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj",
+        "projectPath": "D:\\jainil\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Quiz-Management\\Quiz_Management\\obj\\",
+        "outputPath": "D:\\jainil\\Projects\\Quiz-Management\\Quiz_Management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

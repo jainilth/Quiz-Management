@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eYm46yjy3B8=",
+  "dgSpecHash": "l/ZdiKNlONg=",
   "success": true,
-  "projectFilePath": "E:\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj",
+  "projectFilePath": "D:\\jainil\\Projects\\Quiz-Management\\Quiz_Management\\Quiz_Management.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\epplus\\7.6.1\\epplus.7.6.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\epplus.interfaces\\7.6.1\\epplus.interfaces.7.6.1.nupkg.sha512",
@@ -27,5 +27,12 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0\\system.text.encoding.codepages.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }
